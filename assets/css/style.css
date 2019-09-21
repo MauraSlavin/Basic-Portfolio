@@ -1,97 +1,94 @@
-
-
+/* Body is centered, and uses whole page */
 body {
     width: 100%; 
     align-content: center;
 }
 
+/* Anchor tags for href links have no underlines, and the text is gray */
 a {
     text-decoration: none;
     color: gray;
 }
 
+/* Sub-header doesn't use the full width of the screen. */
+/* I'm not sure what margin: auto does! */
 .header {
     width: 75%;
     margin: auto;
 }
 
-.page-header {
-    float: left;
-    margin: 0px;
-}
 
+/* Navigation links are on the same line as the page header, to the right */
+/* They should be vertically centered with respect to the header */
 .header-nav {
     float: right;
-    vertical-align: middle;
+    vertical-align: middle;  /* not quite working right */
     text-align: right;
 }
 
+
+/* The header goes to the left (navigation links to its right) */
 .page-header {
     float: left;
-    background-color:#4aaaa5; 
- /*   width:250px;   */
+    margin: 0px;
+    background-color:#4aaaa5;       /* light blue background */
     height:60px; 
-    padding: 20px;
-    color:white; 
+    padding: 20px;                    /* space between text & edge of element */
+    color:white;                    /* white text is nice on blue background! */
     line-height:60px;
-    text-align:center;
+    text-align:center;                /* put text in middle of element */
     display:inline;
 }
 
-/*
-.break-line {
-    margin: 0px;
-    padding: 0px;
-    align: bottom;
-    width: 100%;
-}
-*/
-
+/* Navigation section is relatively narrow, and no underscores */
 .header-nav {
    width: 25%;
    list-style-type: none; 
 }
 
+
 .header-nav li {
-    display: inline-block; 
-    font-size: small;
+    display: inline-block;          /* keeps choices on same line */
+    font-size: small;               /* small font */
 }
 
-
+/* no underscores on navagation links, gray text */
 a.link {
     text-decoration: none;
     text-decoration-color: gray;
 }
 
+
 .text {
-    vertical-align: top;
-    line-height: 1.5em;
-    padding-top: 0px;
-    margin-top: 0px gray;
-    color: gray;
+    vertical-align: top;     /* align with top of image */
+    line-height: 1.5em;      /* 1.5 line spacing */
+    padding-top: 0px;        /* no space at top */
+    margin-top: 0px gray;  
+    color: gray;           /* gray text */
 }
 
-.first-parag {
+.first-parag {               /* no space before first paragraph */
     margin-top: 0px;
 }
 
 .section-top-rule {
-    border-top: 1px rgb(236, 236, 236) solid;
-    margin-bottom: 20px;
+    border-top: 1px rgb(236, 236, 236) solid;   /* very light gray line */
+    margin-bottom: 20px;                           /* space after the line */
 }
 
 #about {
-    border-top: 1px solid gray;
-    background-color: lightgray;
+    border-top: 1px solid gray;     /* line under About Maura header */
+    background-color: lightgray;    
     margin: auto;
-    padding: 20px;
-    width: 90%;
+    padding: 20px;                    /* room for background gray */
+    width: 90%;                       /* not quite the full width of the screen */
 }
 
-#section-header {
+#section-header {                     /* text color for About Maura section header */
     color: #4aaaa5;
 }
 
+/* format element that has the About Me image and paragraph in it */
 #div-in-div {
     width: 80%;
     margin: auto;
@@ -99,6 +96,7 @@ a.link {
     background-color: white;
 }
 
+/* image goes to the left (so text can wrap around it), and leave buffer between image and text */
 #my-face {
     float: left;
     margin-right: 15px;
