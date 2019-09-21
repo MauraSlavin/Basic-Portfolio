@@ -1,12 +1,105 @@
-#page-header {
+
+
+body {
+    width: 100%; 
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.header {
+    width: 75%;
+    margin: auto;
+}
+
+.page-header {
+    float: left;
+    margin: 0px;
+}
+
+.header-nav {
+    float: right;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.page-header {
+    float: left;
     background-color:#4aaaa5; 
-    width:250px; 
+ /*   width:250px;   */
     height:60px; 
+    padding: 20px;
     color:white; 
     line-height:60px;
     text-align:center;
+    display:inline;
 }
 
-#break-line {
-    margin-top:-1.5em;
+/*
+.break-line {
+    margin: 0px;
+    padding: 0px;
+    align: bottom;
+    width: 100%;
+}
+*/
+
+.header-nav {
+   width: 25%;
+   list-style-type: none; 
+}
+
+.header-nav li {
+    display: inline-block; 
+    font-size: small;
+}
+
+
+a.link {
+    text-decoration: none;
+    text-decoration-color: gray;
+}
+
+.text {
+    vertical-align: top;
+    line-height: 1.5em;
+    padding-top: 0px;
+    margin-top: 0px gray;
+    color: gray;
+}
+
+.first-parag {
+    margin-top: 0px;
+}
+
+.section-top-rule {
+    border-top: 1px rgb(236, 236, 236) solid;
+    margin-bottom: 20px;
+}
+
+#about {
+    border-top: 1px solid gray;
+    background-color: lightgray;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+}
+
+#section-header {
+    color: #4aaaa5;
+}
+
+#div-in-div {
+    width: 80%;
+    margin: auto;
+    padding: 5px 20px 10px;
+    background-color: white;
+}
+
+#my-face {
+    float: left;
+    margin-right: 15px;
 }
