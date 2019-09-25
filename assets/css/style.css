@@ -10,23 +10,23 @@
 
 /* Body is centered, and uses whole page */
 body {
-    margin: auto;                                       /* helps with centering */
-    width: 100%;
-    font-family: 'Arial', 'Helvitica Neue', Helvitica, sans-serif;
-    font-size: 12px;
-    line-height: 18pt;                                  /* makes 1.5 spacing (12px font w/ 18px line-height) */
-    color: #777777;                                   /* regular text color */                     
+  margin: auto;                                       /* helps with centering */
+  width: 100%;
+  font-family: 'Arial', 'Helvitica Neue', Helvitica, sans-serif;
+  font-size: 12px;
+  line-height: 18pt;                                  /* makes 1.5 spacing (12px font w/ 18px line-height) */
+  color: #777777;                                   /* regular text color */                     
 }
 
 
 /* Header doesn't use the full width of the screen. */
 header {
-    display: block;
-    margin: auto;
-    padding: 0 194.5px;                                 /* leaves 960 for content */
-    background-color: #ffffff;                       /* main header background color is white */
-    border: solid 0px #cccccc;
-    border-bottom-width: 3px;
+  display: block;
+  margin: auto;
+  padding: 0 194.5px;                                 /* leaves 960 for content */
+  background-color: #ffffff;                       /* main header background color is white */
+  border: solid 0px #cccccc;
+  border-bottom-width: 3px;
 
 /* since border under heading is the width of the main content, it's coded as the top border of "content." */
 }
@@ -34,56 +34,55 @@ header {
 
 /* make float work correctly */
 .clearfix::after {
-    content: " ";
-    display: block;
-    clear: both;
-    background-color: #ffffff;
+  content: " ";
+  display: block;
+  clear: both;
+  background-color: #ffffff;
 }
-
 
 /* The header goes to the left (navigation links to its right) */
 .page-header {
-    float: left;
-    margin: auto;
+  float: left;
+  margin: auto;
  /*   padding: 20px;     in h1                /* space between text & edge of element */
-    color:white;                    /* white text is nice on teal-ish background! */
-    background-color: #4aaaa5;
+  color:white;                    /* white text is nice on teal-ish background! */
+  background-color: #4aaaa5;
 }
 
 
 /* font for Main header and Secion headers */
 h1 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    padding: 10px 10px 10px 20px;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  padding: 10px 10px 10px 20px;
 }
 
 
 /* Navigation links are on the same line as the page header, to the right */
 /* They should be vertically centered with respect to the header */
 .header-nav {
-    float: right;                   /* puts the navagation links to the right of the block */
-    text-align: right;              /* link text is right-justified */
-    margin-top: 16px;               /* to vertical center wrt h1 header */
+  float: right;                   /* puts the navagation links to the right of the block */
+  text-align: right;              /* link text is right-justified */
+  margin-top: 16px;               /* to vertical center wrt h1 header */
 }
 
 
 .header-nav li {
-    display: inline-block;          /* keeps choices on same line */
-    font-size: small;               /* small font */
+  display: inline-block;          /* keeps choices on same line */
+  font-size: small;               /* small font */
 }
 
 
 /* Anchor tags for href links have no underlines, and the text is gray  */
 a {
-    text-decoration: none;          /* no underlines */
-    color: #777777;               /* gray */
+  text-decoration: none;          /* no underlines */
+  color: #777777;               /* gray */
 }
 
 
 /* The color of the "|" character to separate link text is a lighter color. */
 .lightgrey-vline {
-    color: lightgrey;
-    margin: 0;
+  color: lightgrey;
+  margin: 0;
 }
 
 
@@ -91,36 +90,36 @@ a {
 /*  STILL WORKING on getting textured background. */
 .content {
 /*  background-color: lightgray;       /* light blue background */
-    background-color: lightslategray;
+  background-color: lightslategray;
 /* can I down load this to a local file and refer to it there ?? */
 /* background-image: http://www.zingerbugimages.com/backgrounds/aqua_marble_seamless.jpg); */
 /* background-image: image(src="c/Users/maura/bootcamp/homework/Basic-Portfolio/assets/images/background.jpg");  */
     
     
     /*  src="assets/images/background.jpg"; */
-    background-position: top left;                  /* background image starts here */
-    background-repeat: repeat;                      /* repeats if not big enough */
-    background-attachment: fixed;                   /* ???  */
-    border-top: solid grey 1px;                   /* border */
-    margin-top: 0;                                  
-    padding: 10px 0;
+  background-position: top left;                  /* background image starts here */
+  background-repeat: repeat;                      /* repeats if not big enough */
+  background-attachment: fixed;                   /* ???  */
+  border-top: solid grey 1px;                   /* border */
+  margin-top: 0;                                  
+  padding: 10px 0;
 }
 
 
 /* Needed to line up blocks properly with margins and padding. */
 #margin {
-    width: 67%;
-    margin: auto;
-    margin-bottom: 40px;
-    padding: 10px;
+  width: 67%;
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 10px;
 }
 
 
 /* format element that has the About Me image and paragraph in it */
 #about {
-    border: solid 0 transparent;
-    border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
-    margin: 0;
+  border: solid 0 transparent;
+  border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
+  margin: 0;
 
 /* Border image 
       ========================================================
@@ -131,74 +130,117 @@ a {
       ========================================================
  */
   
-    border-image-source: url(../images/spiration-dark.png);
-    border-image-repeat: repeat;
-    border-image-slice: 50;     /* full height & width of image is 99 */
-
-
+  border-image-source: url(../images/spiration-dark.png);
+  border-image-repeat: repeat;
+  border-image-slice: 50;     /* full height & width of image is 99 */
 }
 
 
 .section-header {                                     /* text color for About Maura section header */
-    color: #4aaaa5;                                 /* teal */
+  color: #4aaaa5;                                 /* teal */
 }
 
-    .section-header:after {                        /* separator line is drawn as a border under "About Maura (me)" */
-        content : "";                               /* Needed for pseudo element to work */
-        display: block;                             /* puts border on it's own line */
-        width  : 900px;                             /* length of border */
-        border-bottom: 2px solid #cccccc;         /* thickness, style & color of border */
-      }
+.section-header:after {                        /* separator line is drawn as a border under "About Maura (me)" */
+  content : "";                               /* Needed for pseudo element to work */
+  display: block;                             /* puts border on it's own line */
+  width  : 930px;                             /* length of border */
+  border-bottom: 2px solid #cccccc;         /* thickness, style & color of border */
+  padding-bottom: 20px;                        /* space between page title & border */
+}
              
-
-
-
 
 /* image goes to the left (so text can wrap around it), and leave buffer between image and text */
 #my-face {
-    float: left;
-    margin-right: 15px;                               /* leaves space between image and text */
-    padding: 0px 0px 0px 20px;                        /* leaves space left of the image so it lines up with the header & text */
+  float: left;
+  margin-right: 15px;                               /* leaves space between image and text */
+  padding: 0px 0px 0px 20px;                        /* leaves space left of the image so it lines up with the header & text */
 }
 
 
 .text {
-    vertical-align: top;                              /* align with top of image */
-    color: gray;                                    /* gray text */
-    padding: 0px 20px 0px 20px;                       /* lines up with image and heading; and same size "margin" on the right */
+  vertical-align: top;                              /* align with top of image */
+  color: gray;                                    /* gray text */
+  padding: 0px 20px 0px 20px;                       /* lines up with image and heading; and same size "margin" on the right */
 }
 
 
 .first-parag {                                        /* no space before first paragraph */
-    margin-top: 0px;
+  margin-top: -5px;
 }
 
 
 /* simple footer block */
 #footer {
-    background-color: #666666 ;                     /* dark grey background */
-    color: lightgrey;                               /* light grey text */
-    border-top: solid 5px #4aaaa5;                  /* border above footer to make color scheme of page */
-    margin: 0;
-    padding: 0;
-    text-align: center;                               /* text centered */
-    font-size: 10px;                                  /* small font */
+  background-color: #666666 ;                     /* dark grey background */
+  color: lightgrey;                               /* light grey text */
+  border-top: solid 5px #4aaaa5;                  /* border above footer to make color scheme of page */
+  margin: 0;
+  padding: 0;
+  text-align: center;                               /* text centered */
+  font-size: 10px;                                  /* small font */
 }
 
 
 /* format element that has the Portfolio page formatting */
 #portfolio {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 
 
 /* format element that has the Contact page formatting */
 #contact {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
+
+
+#input-prompts {
+  margin: 0 20px;
+  font-size: 12px;
+}
+
+
+input[type=text-short], select {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 4px 0;
+  font-size: 11px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=text-long], select {
+    width: 100%;
+    height: 100px;
+    padding: 8px 8px;
+    margin: 4px 0;
+    font-size: 11px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
+  input[type=submit] {
+    width: 100px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 8px 8px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #015a56;
+  }
