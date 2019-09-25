@@ -11,24 +11,17 @@
 /* Body is centered, and uses whole page */
 body {
     margin: auto;                                       /* helps with centering */
-    width: 100%;
-    font-family: 'Arial', 'Helvitica Neue', Helvitica, sans-serif;
+    width: 75%;
+    font-family: sans-serif;
     font-size: 12px;
     line-height: 18pt;                                  /* makes 1.5 spacing (12px font w/ 18px line-height) */
-    color: #777777;                                   /* regular text color */                     
 }
 
 
 /* Header doesn't use the full width of the screen. */
 header {
-    display: block;
+    width: 67%;
     margin: auto;
-    padding: 0 194.5px;                                 /* leaves 960 for content */
-    background-color: #ffffff;                       /* main header background color is white */
-    border: solid 0px #cccccc;
-    border-bottom-width: 3px;
-
-/* since border under heading is the width of the main content, it's coded as the top border of "content." */
 }
 
 
@@ -37,7 +30,6 @@ header {
     content: " ";
     display: block;
     clear: both;
-    background-color: #ffffff;
 }
 
 
@@ -45,16 +37,9 @@ header {
 .page-header {
     float: left;
     margin: auto;
- /*   padding: 20px;     in h1                /* space between text & edge of element */
+    padding: 20px;                    /* space between text & edge of element */
     color:white;                    /* white text is nice on teal-ish background! */
     background-color: #4aaaa5;
-}
-
-
-/* font for Main header and Secion headers */
-h1 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    padding: 10px 10px 10px 20px;
 }
 
 
@@ -75,13 +60,13 @@ h1 {
 
 /* Anchor tags for href links have no underlines, and the text is gray  */
 a {
-    text-decoration: none;          /* no underlines */
-    color: #777777;               /* gray */
+    text-decoration: none;
+    color: gray;
 }
 
 
 /* The color of the "|" character to separate link text is a lighter color. */
-.lightgrey-vline {
+.lightgrey-vline {  
     color: lightgrey;
     margin: 0;
 }
@@ -118,56 +103,18 @@ a {
 
 /* format element that has the About Me image and paragraph in it */
 #about {
- /*   width: 100%; */
-    padding: 0;
-    border: solid 0 orange;
-    border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
-    margin: 0;
-}
-
-
-/*
-    border: solid 0px #cccccc;                      /* border under heading 
-    border-top-width: 3px;
-*/
-
-/* I originally thought the border was textured...from an image.  This is how far I got before I saw the background color in the instructions. */
-/*    
-    border: solid transparent;
-    border-width: 30px 140px 80px;
-    border-image-source: url(../images/borderimage.png);
-    border-image-repeat: repeat;
-    border-image-slice: 33;     /* full height & width of image is 99 
-*/
-
-
-
-/* thought border was an image to make textured...not just gray... 
-#about {
-    width: 75%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    border: solid transparent;
-    border-width: 30px 140px 80px;
-    border-image-source: url(../images/borderimage.png);
-    border-image-repeat: repeat;
-    border-image-slice: 33;
-}
-*/
-
-.section-header {                                     /* text color for About Maura section header */
-    color: #4aaaa5;                                 /* teal */
+    background-color: white;
 }
 
-    .section-header:after {                        /* separator line is drawn as a border under "About Maura (me)" */
-        content : "";                               /* Needed for pseudo element to work */
-        display: block;                             /* puts border on it's own line */
-        width  : 950px;                             /* length of border */
-        border-bottom: 2px solid #cccccc;         /* thickness, style & color of border */
-      }
-             
 
-
+#section-header {                                     /* text color for About Maura section header */
+    color: #4aaaa5;
+    border-bottom: lightgrey solid 2px;             /* separator line is drawn as a border under "About Maura (me)" */
+    padding: 10px 10px 10px 20px;                     /* space around "About Maura (me)" */
+}
 
 
 /* image goes to the left (so text can wrap around it), and leave buffer between image and text */
@@ -192,7 +139,7 @@ a {
 
 /* simple footer block */
 #footer {
-    background-color: #666666 ;                     /* dark grey background */
+    background-color: rgb(105, 105, 105) ;          /* dark grey background */
     height: 40px;
     color: lightgrey;                               /* light grey text */
     border-top: solid 5px #4aaaa5;                  /* border above footer to make color scheme of page */
