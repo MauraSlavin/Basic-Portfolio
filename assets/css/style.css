@@ -118,42 +118,26 @@ a {
 
 /* format element that has the About Me image and paragraph in it */
 #about {
- /*   width: 100%; */
-    padding: 0;
-    border: solid 0 orange;
+    border: solid 0 transparent;
     border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
     margin: 0;
+
+/* Border image 
+      ========================================================
+      This pattern is downloaded from www.subtlepatterns.com 
+      If you need more, that's where to get'em.
+ 
+      https://www.toptal.com/designers/subtlepatterns/page/8/
+      ========================================================
+ */
+  
+    border-image-source: url(../images/spiration-dark.png);
+    border-image-repeat: repeat;
+    border-image-slice: 50;     /* full height & width of image is 99 */
+
+
 }
 
-
-/*
-    border: solid 0px #cccccc;                      /* border under heading 
-    border-top-width: 3px;
-*/
-
-/* I originally thought the border was textured...from an image.  This is how far I got before I saw the background color in the instructions. */
-/*    
-    border: solid transparent;
-    border-width: 30px 140px 80px;
-    border-image-source: url(../images/borderimage.png);
-    border-image-repeat: repeat;
-    border-image-slice: 33;     /* full height & width of image is 99 
-*/
-
-
-
-/* thought border was an image to make textured...not just gray... 
-#about {
-    width: 75%;
-    margin: 0;
-    padding: 0;
-    border: solid transparent;
-    border-width: 30px 140px 80px;
-    border-image-source: url(../images/borderimage.png);
-    border-image-repeat: repeat;
-    border-image-slice: 33;
-}
-*/
 
 .section-header {                                     /* text color for About Maura section header */
     color: #4aaaa5;                                 /* teal */
@@ -162,7 +146,7 @@ a {
     .section-header:after {                        /* separator line is drawn as a border under "About Maura (me)" */
         content : "";                               /* Needed for pseudo element to work */
         display: block;                             /* puts border on it's own line */
-        width  : 950px;                             /* length of border */
+        width  : 900px;                             /* length of border */
         border-bottom: 2px solid #cccccc;         /* thickness, style & color of border */
       }
              
@@ -193,7 +177,6 @@ a {
 /* simple footer block */
 #footer {
     background-color: #666666 ;                     /* dark grey background */
-    height: 40px;
     color: lightgrey;                               /* light grey text */
     border-top: solid 5px #4aaaa5;                  /* border above footer to make color scheme of page */
     margin: 0;
