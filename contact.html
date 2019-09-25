@@ -20,7 +20,7 @@
     <!-- modified from ...      -->
     <!--             https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_nav  -->
     <ul class="header-nav">
-      <li><a href="index.html#about">About</a></li>           <!-- Navigates to About section of About page "|" between choices  -->
+      <li><a href="index.html">About</a></li>           <!-- Navigates to About section of About page "|" between choices  -->
       <li><pre class="lightgrey-vline">  |  </pre></li>       <!-- vertical line separator with spaces (different color) -->
       <li><a href="portfolio.html">Portfolio</a></li>         <!-- Navigates to Portfolio page  -->
       <li><pre class="lightgrey-vline">  |  </pre> </li>      <!-- vertical line separator with spaces (different color) -->
@@ -31,19 +31,19 @@
 
   <section id="about">                                        <!-- block with About Me header & content -->
     <h1 class="section-header">Contact Maura</h1>  
-    <form action="/action_page.php" id="input-prompts">
-        <label for="name">Name</label>
-        <input type="text-short" id="name" name="sender-name" placeholder="John Smith">
+    <form action="/action_page.php" class="input-prompt-block">
+        <label for="name" class="input-prompt" id="first-prompt">Name</label>
+        <input type=text-short class="text-short" name="sender-name" placeholder="John Smith">
     
-        <label for="email">Email</label>
-        <input type="text-short" id="email" name="sender-email" placeholder="example@gmail.com">
+        <label for="email" class="input-prompt">Email</label>
+        <input type=text-short class="text-short" name="sender-email" placeholder="example@gmail.com">
     
-        <label for="message">Message</label>
-        <input type="text-long" id="message" name="sender-msg">
-      
-        <input type="submit" value="Submit">
-      </form>
+        <label for="message" class="input-prompt">Message</label>
+        <textarea type=text-long id="message" name="sender-msg" cols="200" rows="5" ></textarea> 
 
+        <input type="submit" value="Submit">
+    </form>
+  </section>
 
   <div id="footer">                                               <!-- footer -->
     <p>Copyright @2019</p>
