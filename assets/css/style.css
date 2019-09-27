@@ -233,12 +233,44 @@ h2:after {                        /* separator line is drawn as a border under "
 }
 
 
-.proj-link-1:hover, .proj-link-2:hover {
+.proj-link-3 {
+  height: 40px;
+  width: 300px;
+  font-size: large;
+  float: left;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  margin: 200px 0 0 20px;
+  text-align: center;
+  padding: 15px 0 0 0;
+/*    z-index: 2; */
+  position: absolute;
+  left: 194.5px;
+}
+
+
+.proj-link-4 {
+height: 40px;
+width: 300px;
+font-size: large;
+float: left;
+background-color: #4aaaa5;
+color: #ffffff;
+margin: 200px 0 0 20px;
+text-align: center;
+padding: 15px 0 0 0;
+/*    z-index: 2; */
+position: absolute;
+left: 535px;
+}
+
+
+.proj-link-1:hover, .proj-link-2:hover, .proj-link-3:hover, .proj-link-4:hover {
     background-color: #015a56;
     color: black;
 }
 
-#project1, #project2 {
+#project1, #project2, #project3, #project4 {
   float: left;
 }
 
@@ -252,6 +284,16 @@ h2:after {                        /* separator line is drawn as a border under "
   left: 415px;
 }
 
+
+#project3 {
+  top:100px;
+  left: 215px;
+}
+
+#project4 {
+  top:100px;
+  left: 415px;
+}
 .image {
 /*    left: 400px; */
   height: 250px;
