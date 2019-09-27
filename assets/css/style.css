@@ -40,6 +40,14 @@ header {
 /*  background-color: #ffffff;  */
 }
 
+
+/* font for Main header and Section headers */
+h1, h2 {
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  padding: 10px 10px 10px 20px;
+}
+
+
 /* The header goes to the left (navigation links to its right) */
 h1 {
   float: left;
@@ -47,13 +55,8 @@ h1 {
 /*  padding-bottom: 10px;  */
   color:white;                    /* white text is nice on teal-ish background! */
   background-color: #4aaaa5;
-}
-
-
-/* font for Main header and Section headers */
-h1, h2 {
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
-  padding: 10px 10px 10px 20px;
+  height: 40px;
+  padding-top: 25px;
 }
 
 
