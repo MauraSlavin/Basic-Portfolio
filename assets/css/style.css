@@ -182,6 +182,7 @@ h2:after {                        /* separator line is drawn as a border under "
 }
 
 
+/*
 .portfolio-image {
     height: 100px;
     width: 150px;
@@ -192,31 +193,92 @@ h2:after {                        /* separator line is drawn as a border under "
     position: absolute;
     left: 194.5px;
 }
+*/
 
+.allprojects {
+  height: 400px;
+  width: 960px;
+  background-color: #ffffff;
+}
 
-.portfolio-name {
-    height: 30px;
-    width: 150px;
+.proj-link-1 {
+    height: 40px;
+    width: 300px;
+    font-size: large;
     float: left;
     background-color: #4aaaa5;
     color: #ffffff;
-    margin: 70px 0 0 0;
+    margin: 200px 0 0 20px;
     text-align: center;
-    padding: 0;
-    z-index: 2;
+    padding: 15px 0 0 0;
+/*    z-index: 2; */
     position: absolute;
     left: 194.5px;
 }
 
-.portfolio-name:hover {
+.proj-link-2 {
+  height: 30px;
+  width: 150px;
+  float: left;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  margin: 70px 0 0 0;
+  text-align: center;
+  padding: 0;
+/*    z-index: 2; */
+  position: absolute;
+  left: 400px;
+}
+.proj-link-1:hover, .proj-link-2:hover {
     background-color: #015a56;
     color: black;
 }
 
-
-#image2 {
-    left: 400px;
+#project1, #project2 {
+  float: left;
 }
+
+#project1 {
+  top:30px;
+  left: 215px;
+}
+
+#project2 {
+  top:30px;
+  left: 415px;
+}
+
+.image {
+/*    left: 400px; */
+  height: 250px;
+  width: 300px;
+  margin: 20px;
+ /* height: 100px;
+  width: 150px;
+  float: left;
+  margin: 10px 0 0 0;
+  padding: 0;
+  z-index: 1;
+  position: absolute;
+  left: 194.5px;
+  */
+}
+
+/*
+#proj-link-1 {
+  position: absolute;
+  bottom: -50px;
+  left: 215px;
+}
+*/
+
+/*
+#image2 {
+  height: 150px;
+  width: 100px;
+}
+*/
+
 /* format element that has the Portfolio page formatting */
 #portfolio {
   width: 100%;
