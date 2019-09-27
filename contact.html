@@ -1,10 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- <html charset="UTF-8">  -->
+
 <!-- Portfolio website for Maura M Slavin -->
 
-<!DOCTYPE html>
-<html charset="UTF-8">
 
 <head>
-  <title>Maura M Slavin</title>                       <!-- Appears on tab -->
+  <meta charset="UTF-8">
+  <title>Maura M Slavin - Contact</title>                       <!-- Appears on tab -->
   <!-- Linking CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -15,7 +18,7 @@
   <!-- Header (same for all pages) -->
 
   <header class="clearfix">   <!-- clearfix clears floats at end of block -->
-    <h1 class="page-header">Maura M Slavin</h1>     <!-- Main header for page -->
+    <h1>Maura M Slavin</h1>     <!-- Main header for page -->
     <!-- list of navigation choices in line  -->
     <!-- modified from ...      -->
     <!--             https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_nav  -->
@@ -30,14 +33,20 @@
 
 
   <section id="about">                                        <!-- block with About Me header & content -->
-    <h1 class="section-header">Contact Maura</h1>  
+    <h2>Contact Maura</h2>  
     <form action="/action_page.php" class="input-prompt-block">
+      <!-- Validator says: The value of the for attribute of the label element must be the ID of a non-hidden form control.  May need fixing. -->
         <label for="name" class="input-prompt" id="first-prompt">Name</label>
-        <input type=text-short class="text-short" name="sender-name" placeholder="John Smith">
+
+        <!-- validator said text-short & placeholder were wrong, but it doesn't work without it. -->
+        <input type="text-short" class="text-short" name="sender-name" placeholder="John Smith">
     
+        <!-- validator said text-short & placeholder were wrong, but it doesn't work without it. -->
+        <!-- Validator says: The value of the for attribute of the label element must be the ID of a non-hidden form control.  May need fixing. -->
         <label for="email" class="input-prompt">Email</label>
-        <input type=text-short class="text-short" name="sender-email" placeholder="example@gmail.com">
+        <input type="text-short" class="text-short" name="sender-email" placeholder="example@gmail.com">
     
+        <!-- validator said type w/textarea was wrong; and  but it doesn't work without it. -->
         <label for="message" class="input-prompt">Message</label>
         <textarea type=text-long id="message" name="sender-msg" cols="200" rows="5" ></textarea> 
 

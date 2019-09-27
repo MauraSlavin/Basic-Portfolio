@@ -37,23 +37,23 @@ header {
   content: " ";
   display: block;
   clear: both;
-  background-color: #ffffff;
+/*  background-color: #ffffff;  */
 }
 
 /* The header goes to the left (navigation links to its right) */
-.page-header {
+h1 {
   float: left;
   margin: auto;
- /*   padding: 20px;     in h1                /* space between text & edge of element */
+/*  padding-bottom: 10px;  */
   color:white;                    /* white text is nice on teal-ish background! */
   background-color: #4aaaa5;
 }
 
 
-/* font for Main header and Secion headers */
-h1 {
+/* font for Main header and Section headers */
+h1, h2 {
   font-family: 'Georgia', Times, 'Times New Roman', serif;
-  padding: 10px 10px 0px 20px;
+  padding: 10px 10px 10px 20px;
 }
 
 
@@ -62,7 +62,8 @@ h1 {
 .header-nav {
   float: right;                   /* puts the navagation links to the right of the block */
   text-align: right;              /* link text is right-justified */
-  margin-top: 16px;               /* to vertical center wrt h1 header */
+  margin-top: 10px;               /* to vertical center wrt h1 header */
+  margin-bottom: 0px;             /* make name sit on border */
 }
 
 
@@ -136,11 +137,11 @@ a {
 }
 
 
-.section-header {                                     /* text color for About Maura section header */
+h2 {                                     /* text color for About Maura section header */
   color: #4aaaa5;                                 /* teal */
 }
 
-.section-header:after {                        /* separator line is drawn as a border under "About Maura (me)" */
+h2:after {                        /* separator line is drawn as a border under "About Maura (me)" */
   content : "";                               /* Needed for pseudo element to work */
   display: block;                             /* puts border on it's own line */
   width  : 930px;                             /* length of border */
@@ -181,6 +182,41 @@ a {
 }
 
 
+.portfolio-image {
+    height: 100px;
+    width: 150px;
+    float: left;
+    margin: 10px 0 0 0;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+    left: 194.5px;
+}
+
+
+.portfolio-name {
+    height: 30px;
+    width: 150px;
+    float: left;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin: 70px 0 0 0;
+    text-align: center;
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    left: 194.5px;
+}
+
+.portfolio-name:hover {
+    background-color: #015a56;
+    color: black;
+}
+
+
+#image2 {
+    left: 400px;
+}
 /* format element that has the Portfolio page formatting */
 #portfolio {
   width: 100%;
@@ -270,4 +306,5 @@ input[type=text-long] {
   
   input[type=submit]:hover {
     background-color: #015a56;
+    color: black;
   }
