@@ -216,19 +216,23 @@ h2:after {                        /* separator line is drawn as a border under "
     left: 194.5px;
 }
 
+
 .proj-link-2 {
-  height: 30px;
-  width: 150px;
+  height: 40px;
+  width: 300px;
+  font-size: large;
   float: left;
   background-color: #4aaaa5;
   color: #ffffff;
-  margin: 70px 0 0 0;
+  margin: 200px 0 0 20px;
   text-align: center;
-  padding: 0;
+  padding: 15px 0 0 0;
 /*    z-index: 2; */
   position: absolute;
-  left: 400px;
+  left: 535px;
 }
+
+
 .proj-link-1:hover, .proj-link-2:hover {
     background-color: #015a56;
     color: black;
