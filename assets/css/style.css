@@ -69,6 +69,12 @@ h2:after {                        /* separator line is drawn as a border under h
 }
 
 
+.header-nav li a:hover {      /* hightlight nav when hovered over */
+  background-color: #4aaaa5;
+  color: #ffffff;
+}
+
+
 /* Anchor tags for href links have no underlines, and the text is gray  */
 a {
   text-decoration: none;          /* no underlines */
@@ -112,6 +118,12 @@ a {
 
 .first-parag {                                        /* no space before first paragraph, to line up with image */
   margin-top: -5px;
+}
+
+
+#list-margin {
+  margin-left: 100px;                          /* so it doesn't wrap around the image */
+  line-height: 19px;
 }
 
 
