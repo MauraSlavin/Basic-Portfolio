@@ -264,6 +264,9 @@ input[type=text-long] {
   padding: 0;
   text-align: center;                               /* text centered */
   font-size: 10px;                                  /* small font */
+  position: fixed;                                  /* position and bottom make it a sticky footer */
+  bottom: 0;
+  width: 100%;                                      /* entire width of the screen */
 }
 
 
