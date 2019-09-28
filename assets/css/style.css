@@ -92,6 +92,7 @@ a {
 /* format element that has the main page content in it, consistent across all pages */
 .page-content {
   border: solid 0;
+  width: 960x;                                     /* make content width 960px as per instructions */
   border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
   margin: 0;
 /* border-image: http://www.zingerbugimages.com/backgrounds/aqua_marble_seamless.jpg); */
