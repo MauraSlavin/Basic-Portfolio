@@ -33,32 +33,38 @@
   </header> 
 
 
-  <section class=clearfix id="about">                          <!-- block with About Me header & content -->
+  <section class="page-content">                          <!-- block with h2 header & content -->
     <h2 class="clearfix">Maura's Portfolio</h2>                <!-- clearfix clears floats for subsequent elements -->
     
-    <container class="allprojects">                              <!-- container for all projects -->
+    <div id="allprojects project-float">                              <!-- container for all projects -->
    
-      <div id="project1">  <!-- first project -->
+      <div class="project-float">  <!-- first project -->
         <img  class="image" src="assets/images/platypus-image.png" alt="Playtypus" />  <!-- image for project -->
-        <a class="proj-link-1" href="https://mauraslavin.github.io/platypus/" target="_blank" >Platypus</a> <!-- link for project on top of image -->
+        <a class="proj-links proj-link-left" href="https://mauraslavin.github.io/platypus/" target="_blank" >Platypus</a> <!-- link for project on top of image -->
       </div>
 
-      <div class="clearfix" id="project2">  <!-- second project; start new float afterwards -->
+      <div class="clearfix" class="project-float">  <!-- second project; start new float afterwards -->
         <img class="image" src="assets/images/floats-image.png" alt="Floats" />        <!-- image for project 2 -->
-        <a class="proj-link-2" href="https://mauraslavin.github.io/Floats/" target="_blank" >Floats</a> <!-- link on top of project 2 image -->
+        <a class="proj-links proj-link-right" href="https://mauraslavin.github.io/Floats/" target="_blank" >Floats</a> <!-- link on top of project 2 image -->
       </div>
     
-      <div id="project3">  <!-- third project (use data for proj 1 for now) -->
+      <div class="project-float">  <!-- third project (use data for proj 1 for now) -->
         <img  class="image" src="assets/images/platypus-image.png" alt="Playtypus" />  <!-- image for project -->
-        <a class="proj-link-3" href="https://mauraslavin.github.io/platypus/" target="_blank" >Platypus 3</a> <!-- link for project on top of image -->
+        <a class="proj-links proj-link-left" href="https://mauraslavin.github.io/platypus/" target="_blank" >Platypus 3</a> <!-- link for project on top of image -->
       </div>
 
-      <div class="clearfix" id="project4">  <!-- fourth project; start new float afterwards (use data for proj 2 for now) -->
+      <div class="clearfix" class="project-float">  <!-- fourth project; start new float afterwards (use data for proj 2 for now) -->
         <img class="image" src="assets/images/floats-image.png" alt="Floats" />        <!-- image for project 2 -->
-        <a class="proj-link-4" href="https://mauraslavin.github.io/Floats/" target="_blank" >Floats 2</a> <!-- link on top of project 2 image -->
+        <a class="proj-links proj-link-right" href="https://mauraslavin.github.io/Floats/" target="_blank" >Floats 2</a> <!-- link on top of project 2 image -->
       </div>
       
-    </container>
+      <div class="clearfix" class="project-float">  <!-- fourth project; start new float afterwards (use data for proj 2 for now) -->
+        <img class="image" src="assets/images/floats-image.png" alt="Floats" />        <!-- image for project 2 -->
+        <a class="proj-links proj-link-left" href="https://mauraslavin.github.io/Floats/" target="_blank" >Floats 2</a> <!-- link on top of project 2 image -->
+      </div>
+      
+      
+    </div>
 
   </section>
 

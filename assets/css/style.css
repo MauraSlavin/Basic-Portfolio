@@ -1,18 +1,8 @@
-
-/*
-    
-        These are in order of appearance in the index file.
-        Everything on home page except the textured background is working.
-
-*/
-
-
-
 /* Body is centered, and uses whole page */
 body {
   margin: auto;                                       /* helps with centering */
   width: 100%;
-  font-family: 'Arial', 'Helvitica Neue', Helvitica, sans-serif;
+  font-family: 'Arial', 'Helvitica Neue', Helvitica, sans-serif;  /* per instructions */
   font-size: 12px;
   line-height: 18pt;                                  /* makes 1.5 spacing (12px font w/ 18px line-height) */
   color: #777777;                                   /* regular text color */                     
@@ -27,23 +17,12 @@ header {
   background-color: #ffffff;                       /* main header background color is white */
   border: solid 0px #cccccc;
   border-bottom-width: 3px;
-
-/* since border under heading is the width of the main content, it's coded as the top border of "content." */
 }
 
 
-/* make float work correctly */
-.clearfix::after {
-  content: " ";
-  display: block;
-  clear: both;
-/*  background-color: #ffffff;  */
-}
-
-
-/* font for Main header and Section headers */
+/* font & default spacing for Main header and Section headers */
 h1, h2 {
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;  /* per instructions */
   padding: 10px 10px 10px 20px;
 }
 
@@ -54,9 +33,23 @@ h1 {
   margin: auto;
 /*  padding-bottom: 10px;  */
   color:white;                    /* white text is nice on teal-ish background! */
-  background-color: #4aaaa5;
+  background-color: #4aaaa5;      /* teal */
   height: 40px;
   padding-top: 25px;
+}
+
+
+h2 {                                     /* text color for h2 section headers */
+  color: #4aaaa5;                                 /* teal */
+}
+
+
+h2:after {                        /* separator line is drawn as a border under h2 header */
+  content : "";                               /* Needed for pseudo element to work */
+  display: block;                             /* puts border on it's own line */
+  width  : 930px;                             /* length of border */
+  border-bottom: 2px solid #cccccc;         /* thickness, style & color of border */
+  padding-bottom: 20px;                        /* space between page title & border */
 }
 
 
@@ -65,7 +58,7 @@ h1 {
 .header-nav {
   float: right;                   /* puts the navagation links to the right of the block */
   text-align: right;              /* link text is right-justified */
-  margin-top: 10px;               /* to vertical center wrt h1 header */
+  margin-top:25px;               /* to vertical center wrt h1 header */
   margin-bottom: 0px;             /* make name sit on border */
 }
 
@@ -90,66 +83,15 @@ a {
 }
 
 
-/* Outermost block (content) has background color and top border */
-/*  STILL WORKING on getting textured background. */
-.content {
-/*  background-color: lightgray;       /* light blue background */
-  background-color: lightslategray;
-/* can I down load this to a local file and refer to it there ?? */
-/* background-image: http://www.zingerbugimages.com/backgrounds/aqua_marble_seamless.jpg); */
-/* background-image: image(src="c/Users/maura/bootcamp/homework/Basic-Portfolio/assets/images/background.jpg");  */
-    
-    
-    /*  src="assets/images/background.jpg"; */
-  background-position: top left;                  /* background image starts here */
-  background-repeat: repeat;                      /* repeats if not big enough */
-  background-attachment: fixed;                   /* ???  */
-  border-top: solid grey 1px;                   /* border */
-  margin-top: 0;                                  
-  padding: 10px 0;
-}
-
-
-/* Needed to line up blocks properly with margins and padding. */
-#margin {
-  width: 67%;
-  margin: auto;
-  margin-bottom: 40px;
-  padding: 10px;
-}
-
-
-/* format element that has the About Me image and paragraph in it */
-#about {
-  border: solid 0 transparent;
+/* format element that has the main page content in it, consistent across all pages */
+.page-content {
+  border: solid 0;
   border-width: 30px 194.5px 80px 194.5px;        /* leaves 960px for block width; top & bottom image borders */
   margin: 0;
-
-/* Border image 
-      ========================================================
-      This pattern is downloaded from www.subtlepatterns.com 
-      If you need more, that's where to get'em.
- 
-      https://www.toptal.com/designers/subtlepatterns/page/8/
-      ========================================================
- */
-  
-  border-image-source: url(../images/spiration-dark.png);
-  border-image-repeat: repeat;
-  border-image-slice: 50;     /* full height & width of image is 99 */
-}
-
-
-h2 {                                     /* text color for About Maura section header */
-  color: #4aaaa5;                                 /* teal */
-}
-
-h2:after {                        /* separator line is drawn as a border under "About Maura (me)" */
-  content : "";                               /* Needed for pseudo element to work */
-  display: block;                             /* puts border on it's own line */
-  width  : 930px;                             /* length of border */
-  border-bottom: 2px solid #cccccc;         /* thickness, style & color of border */
-  padding-bottom: 20px;                        /* space between page title & border */
+/* border-image: http://www.zingerbugimages.com/backgrounds/aqua_marble_seamless.jpg); */
+  border-image-source: url(../images/aqua_marble_seamless.jpg);
+  border-image-repeat: initial;
+  border-image-slice: 67;     /* full height & width of image is 500x500; 67 looked nice. */
 }
              
 
@@ -161,191 +103,67 @@ h2:after {                        /* separator line is drawn as a border under "
 }
 
 
+/* paragraphs all formatted similarly */
 .text {
   vertical-align: top;                              /* align with top of image */
-  color: gray;                                    /* gray text */
   padding: 0px 20px 0px 20px;                       /* lines up with image and heading; and same size "margin" on the right */
 }
 
 
-.first-parag {                                        /* no space before first paragraph */
+.first-parag {                                        /* no space before first paragraph, to line up with image */
   margin-top: -5px;
 }
 
 
-/* simple footer block */
-#footer {
-  background-color: #666666 ;                     /* dark grey background */
-  color: lightgrey;                               /* light grey text */
-  border-top: solid 5px #4aaaa5;                  /* border above footer to make color scheme of page */
-  margin: 0;
-  padding: 0;
-  text-align: center;                               /* text centered */
-  font-size: 10px;                                  /* small font */
-}
-
-
-/*
-.portfolio-image {
-    height: 100px;
-    width: 150px;
-    float: left;
-    margin: 10px 0 0 0;
-    padding: 0;
-    z-index: 1;
-    position: absolute;
-    left: 194.5px;
-}
-*/
-
-.allprojects {
-  height: 400px;
+#allprojects {                                    /* element to hold all the projects */
+  height: 1000px;
   width: 960px;
   background-color: #ffffff;
 }
 
-.proj-link-1 {
-    height: 40px;
-    width: 300px;
-    font-size: large;
-    float: left;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    margin: 200px 0 0 20px;
-    text-align: center;
-    padding: 15px 0 0 0;
-/*    z-index: 2; */
-    position: absolute;
+.proj-links {                             /* formats everything that is the same for all the links & images */
+  height: 40px;
+  width: 300px;
+  font-size: large;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  margin: 200px 0 0 20px;
+  text-align: center;
+  padding: 15px 0 0 0;
+  position: absolute;                   /*  the teal box is placed relative to the parent element */
+  float: left;                          /* stack elements starting on the left */
+}
+
+.proj-link-left {                     /* all the projects that are on the left, are 194.5px from the left edge of the parent element */
     left: 194.5px;
 }
 
 
-.proj-link-2 {
-  height: 40px;
-  width: 300px;
-  font-size: large;
-  float: left;
-  background-color: #4aaaa5;
-  color: #ffffff;
-  margin: 200px 0 0 20px;
-  text-align: center;
-  padding: 15px 0 0 0;
-/*    z-index: 2; */
-  position: absolute;
+.proj-link-right {                     /* all the projects that are on the right, are 535px from the left edge of the parent element */
   left: 535px;
 }
 
 
-.proj-link-3 {
-  height: 40px;
-  width: 300px;
-  font-size: large;
-  float: left;
-  background-color: #4aaaa5;
-  color: #ffffff;
-  margin: 200px 0 0 20px;
-  text-align: center;
-  padding: 15px 0 0 0;
-/*    z-index: 2; */
-  position: absolute;
-  left: 194.5px;
-}
-
-
-.proj-link-4 {
-height: 40px;
-width: 300px;
-font-size: large;
-float: left;
-background-color: #4aaaa5;
-color: #ffffff;
-margin: 200px 0 0 20px;
-text-align: center;
-padding: 15px 0 0 0;
-/*    z-index: 2; */
-position: absolute;
-left: 535px;
-}
-
-
-.proj-link-1:hover, .proj-link-2:hover, .proj-link-3:hover, .proj-link-4:hover {
+.proj-links:hover {                     /* turn the links a darker teal with black text when hovered over */
     background-color: #015a56;
     color: black;
 }
 
-#project1, #project2, #project3, #project4 {
+
+.project-float {      /* all images float left */
   float: left;
 }
 
-#project1 {
-  top:30px;
-  left: 215px;
-}
 
-#project2 {
-  top:30px;
-  left: 415px;
-}
-
-
-#project3 {
-  top:100px;
-  left: 215px;
-}
-
-#project4 {
-  top:100px;
-  left: 415px;
-}
+/* size of portfolio images */
 .image {
-/*    left: 400px; */
   height: 250px;
   width: 300px;
   margin: 20px;
- /* height: 100px;
-  width: 150px;
-  float: left;
-  margin: 10px 0 0 0;
-  padding: 0;
-  z-index: 1;
-  position: absolute;
-  left: 194.5px;
-  */
-}
-
-/*
-#proj-link-1 {
-  position: absolute;
-  bottom: -50px;
-  left: 215px;
-}
-*/
-
-/*
-#image2 {
-  height: 150px;
-  width: 100px;
-}
-*/
-
-/* format element that has the Portfolio page formatting */
-#portfolio {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
+ }
 
 
-/* format element that has the Contact page formatting */
-#contact {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
-
-
+ /* format block that prompts for input: things that are common for consistency */
 .input-prompt-block {
   margin: 0 20px;
   font-size: 12px;
@@ -358,11 +176,12 @@ left: 535px;
   vertical-align: text-top;
 }
 
+
 #first-prompt {
   line-height: 12px;
 }
 
-
+/* one line input box */
 input[type=text-short], select {
   width: 100%;
   padding: 8px 8px;
@@ -375,6 +194,7 @@ input[type=text-short], select {
 }
 
 
+/* multiple line input box */
 textarea {
   display: block;
   width: 100%;
@@ -415,7 +235,29 @@ input[type=text-long] {
     cursor: pointer;
   }
   
+
+  /* change color of submit box & text to black when hovering over it */
   input[type=submit]:hover {
     background-color: #015a56;
     color: black;
   }
+
+  
+/* simple footer block */
+#footer {
+  background-color: #666666 ;                     /* dark grey background */
+  color: lightgrey;                               /* light grey text */
+  border-top: solid 5px #4aaaa5;                  /* border above footer to make color scheme of page */
+  margin: 0;
+  padding: 0;
+  text-align: center;                               /* text centered */
+  font-size: 10px;                                  /* small font */
+}
+
+
+/* make float work correctly */
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
